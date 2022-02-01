@@ -1,0 +1,27 @@
+<div class="row">
+  {{#each notes}}
+    <div class="col-md-3">
+      <div
+        class="card text-dark bg-light mb-3 shadow"
+        style="max-width: 18rem;"
+      >
+        <div class="card-header text-white bg-dark text-center">
+          <h4 class="card-title justify-content-between">
+            {{title}}
+          </h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">{{description}}</p>
+        </div>
+      </div>
+    </div>
+  {{else}}
+    <div class="card mx-auto">
+      <div class="card-body">
+        <h1> hello {{user.name}}</h1>
+        <p class="lead">No hay notas!.</p>
+        <a href="/notes/add" class="btn btn-success bt-block">Crea una nota</a>
+      </div>
+    </div>
+  {{/each}}
+</div>

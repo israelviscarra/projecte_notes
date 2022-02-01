@@ -1,0 +1,30 @@
+<div class="container w-full md:w-4/5 xl:w-3/5 mx-auto px-2">
+  <div class="bg-green-400 bg-opacity-100 text-gray-100 text-center"><p
+      class="text-xl"
+    >Datatables - Tailwind CSS</p></div>
+  <div id="recipients" class="p-8 mt-6 lg:mt-0 rounded shadow bg-white">
+    <table
+      id="users"
+      class="stripe hover"
+      style="width:100%; padding-top: 1em;  padding-bottom: 1em;"
+    >
+      <thead>
+        <tr class="bg-indigo-400 bg-opacity-100 text-dark">
+          <th data-priority="1">Title</th>
+          <th data-priority="2">USER NAME</th>
+          <th data-priority="3">FIRST NAME</th>
+          <th data-priority="4">LAST NAME</th>
+          <th data-priority="5">GENDER</th>
+          <th data-priority="6">PASSWORD</th>
+          <th data-priority="7">STATUS</th>
+        </tr>
+      </thead>
+      {{#each notes}}
+        <tbody>
+          {{title}}
+        </tbody>
+      {{/each}}
+
+    </table>
+  </div>
+</div>
